@@ -51,3 +51,102 @@ select {
   font-size: inherit;
 }
 /* CSS Reset */
+
+body {
+  background-color: #f0f7fc;
+  font-family: "Oswald", serif;
+}
+
+main {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 80vw;
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-img {
+  width: 50%;
+}
+
+h1 {
+  color: #246682;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  color: #141c21;
+}
+
+p {
+  color: #7a8388;
+}
+
+span {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.time {
+  font-size: 2rem;
+}
+
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #141c21;
+
+}
+
+.countdown {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 60rem) {
+  .content-container {
+    flex-direction: column;
+    width: 60vw;
+  }
+
+  .main-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .content-info {
+    text-align: center;
+    width: 80%;
+  }  
+
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 100vw;
+  }
+
+  main {
+    align-items: flex-start;
+  }
+}
