@@ -55,10 +55,11 @@ select {
 body {
   background-color: #f0f7fc;
   font-family: "Oswald", serif;
+  padding: 1rem;
 }
 
 main {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -68,13 +69,14 @@ main {
   display: flex;
   align-items: center;
   gap: 2rem;
-  width: 80vw;
+  width: 60rem;
 }
 
 .content-info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 50%;
 }
 
 .main-img {
@@ -112,7 +114,6 @@ span {
   width: 5rem;
   height: 5rem;
   background-color: #141c21;
-
 }
 
 .countdown {
@@ -120,22 +121,27 @@ span {
   gap: 1rem;
 }
 
-@media screen and (max-width: 60rem) {
+/* Media Queries */
+@media screen and (max-width: 63rem) {
   .content-container {
     flex-direction: column;
-    width: 60vw;
+    width: 30rem;
   }
 
   .main-img {
     width: 100%;
   }
+
+  .content-info {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 33rem) {
   .content-info {
     text-align: center;
     width: 80%;
-  }  
+  }
 
   .countdown {
     flex-wrap: wrap;
@@ -148,5 +154,9 @@ span {
 
   main {
     align-items: flex-start;
+  }
+
+  body {
+    padding: 0;
   }
 }
